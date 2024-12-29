@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-test-ecru.vercel.app/sitemap.xml
+
+

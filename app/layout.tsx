@@ -1,24 +1,19 @@
 import type { Metadata } from "next";
-// import { Poppins } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import cn from "util";
-
-// const poppin = Poppins({
-//   weight: ["500", "400", "600"],
-//   variable: "--poppins",
-//   subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
   title: "Your Portfolio - Your Name",
   description:
     "A portfolio showcasing web development projects with Next.js, React, and more.",
   keywords: "portfolio, web development, React, Next.js, developer",
-  authors: [{ name: "Your Name", url: "https://your-portfolio.com" }],
+  authors: [
+    { name: "Your Name", url: "https://portfolio-test-ecru.vercel.app/" },
+  ],
   creator: "Your Name",
   viewport: "width=device-width, initial-scale=1",
-  robots: "index, follow",
-  themeColor: "#000000",
+  robots: "index, follow", // Allows search engines to index your site
+  themeColor: "#000000", // Customize the theme color
 };
 
 export default function RootLayout({
@@ -28,8 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <head>
-         Meta Tags for SEO and Social Sharing 
+      <head>
+        {/* Meta Tags for SEO and Social Sharing */}
         <meta
           name="description"
           content="A portfolio showcasing web development projects with Next.js, React, and more."
@@ -40,7 +35,7 @@ export default function RootLayout({
           content="portfolio, web development, React, Next.js, developer"
         />
 
-         Open Graph Meta Tags (For Social Media Sharing) 
+        {/* Open Graph Meta Tags (For Social Media Sharing) */}
         <meta property="og:title" content="Your Portfolio - Your Name" />
         <meta
           property="og:description"
@@ -48,13 +43,16 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://your-portfolio.com/images/your-image.jpg"
+          content="https://portfolio-test-ecru.vercel.app/images/mos-image.jpg"
         />
-        <meta property="og:url" content="https://your-portfolio.com" />
+        <meta
+          property="og:url"
+          content="https://portfolio-test-ecru.vercel.app/"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Your Portfolio" />
 
-         Twitter Card Meta Tags 
+        {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Your Portfolio - Your Name" />
         <meta
@@ -63,16 +61,16 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://your-portfolio.com/images/your-image.jpg"
+          content="https://portfolio-test-ecru.vercel.app/images/mos-image.jpg"
         />
 
-         Google Site Verification 
-        <meta
+        {/* Google Site Verification */}
+        {/* <meta
           name="google-site-verification"
           content="YOUR_GOOGLE_VERIFICATION_CODE"
-        />
+        /> */}
 
-         Manifest and Icons for PWA 
+        {/* Manifest and Icons for PWA */}
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
@@ -89,7 +87,7 @@ export default function RootLayout({
           href="/icons/icon-16x16.png"
         />
 
-         Structured Data (JSON-LD) 
+        {/* Structured Data (JSON-LD) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -98,21 +96,22 @@ export default function RootLayout({
               "@type": "Person",
               name: "Your Name",
               jobTitle: "Web Developer",
-              url: "https://your-portfolio.com",
-              image: "https://your-portfolio.com/images/your-image.jpg",
+              url: "https://portfolio-test-ecru.vercel.app/",
+              image:
+                "https://portfolio-test-ecru.vercel.app/images/mos-image.jpg",
               description:
                 "Full-stack web developer specializing in React and Next.js",
               sameAs: [
-                "https://www.linkedin.com/in/yourprofile",
-                "https://github.com/yourhandle",
-                "https://twitter.com/yourhandle",
+                "https://www.linkedin.com/in/moses-mwangi-5b4ba6292/",
+                "https://github.com/moses-mwangi/portfolio_test",
+                // "https://twitter.com/yourhandle",
               ],
             }),
           }}
         />
 
-       Google Analytics Script
-        <script
+        {/* Google Analytics Script */}
+        {/* <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=YOUR_GA_TRACKING_ID`}
         ></script>
@@ -123,11 +122,11 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'YOUR_GA_TRACKING_ID');
           `}
-        </script>
-      </head> */}
+        </script> */}
+      </head>
 
       <body
-      // className={`${cn(poppin.variable)}`}
+      // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
