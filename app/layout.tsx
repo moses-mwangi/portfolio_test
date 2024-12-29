@@ -93,7 +93,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Your Name",
+              name: "Moses Mwangi",
               jobTitle: "Web Developer",
               url: "https://portfolio-test-ecru.vercel.app/",
               image:
