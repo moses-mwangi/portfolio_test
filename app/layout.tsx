@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Poppins } from "next/font/google";
 import "./globals.css";
+// import cn from "util";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const poppin = Poppins({
+//   weight: ["500", "400", "600"],
+//   variable: "--poppins",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Your Portfolio - Your Name",
@@ -31,8 +28,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Meta Tags for SEO and Social Sharing */}
+      {/* <head>
+         Meta Tags for SEO and Social Sharing 
         <meta
           name="description"
           content="A portfolio showcasing web development projects with Next.js, React, and more."
@@ -43,7 +40,7 @@ export default function RootLayout({
           content="portfolio, web development, React, Next.js, developer"
         />
 
-        {/* Open Graph Meta Tags (For Social Media Sharing) */}
+         Open Graph Meta Tags (For Social Media Sharing) 
         <meta property="og:title" content="Your Portfolio - Your Name" />
         <meta
           property="og:description"
@@ -57,7 +54,7 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Your Portfolio" />
 
-        {/* Twitter Card Meta Tags */}
+         Twitter Card Meta Tags 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Your Portfolio - Your Name" />
         <meta
@@ -69,13 +66,13 @@ export default function RootLayout({
           content="https://your-portfolio.com/images/your-image.jpg"
         />
 
-        {/* Google Site Verification */}
+         Google Site Verification 
         <meta
           name="google-site-verification"
           content="YOUR_GOOGLE_VERIFICATION_CODE"
         />
 
-        {/* Manifest and Icons for PWA */}
+         Manifest and Icons for PWA 
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
@@ -92,7 +89,7 @@ export default function RootLayout({
           href="/icons/icon-16x16.png"
         />
 
-        {/* Structured Data (JSON-LD) */}
+         Structured Data (JSON-LD) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -114,7 +111,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* Google Analytics Script */}
+       Google Analytics Script
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=YOUR_GA_TRACKING_ID`}
@@ -127,10 +124,10 @@ export default function RootLayout({
             gtag('config', 'YOUR_GA_TRACKING_ID');
           `}
         </script>
-      </head>
+      </head> */}
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      // className={`${cn(poppin.variable)}`}
       >
         {children}
       </body>
