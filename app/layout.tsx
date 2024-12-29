@@ -32,7 +32,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="portfolio, web development, React, Next.js, developer"
+          content="mosportfolio, tmportfolio, moses mwangi, moses mungai mwangi, mwangiportfolio"
         />
 
         {/* Open Graph Meta Tags (For Social Media Sharing) */}
