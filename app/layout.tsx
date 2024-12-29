@@ -36,7 +36,10 @@ export default function RootLayout({
         />
 
         {/* Open Graph Meta Tags (For Social Media Sharing) */}
-        <meta property="og:title" content="Your Portfolio - Your Name" />
+        <meta
+          property="og:title"
+          content="ML/DL Engineer | Fullstack Software Engineer "
+        />
         <meta
           property="og:description"
           content="Explore my web development work and projects."
