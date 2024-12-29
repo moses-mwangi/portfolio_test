@@ -64,11 +64,10 @@ export default function RootLayout({
           content="https://portfolio-test-ecru.vercel.app/images/mos-image.jpg"
         />
 
-        {/* Google Site Verification */}
-        {/* <meta
+        <meta
           name="google-site-verification"
-          content="YOUR_GOOGLE_VERIFICATION_CODE"
-        /> */}
+          content="PMpnrjvJ6j-AYHmu1vvC_lYGDz2b6Um2_LqXDxYCV6k"
+        />
 
         {/* Manifest and Icons for PWA */}
         <link rel="manifest" href="/manifest.json" />
